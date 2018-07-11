@@ -1,0 +1,227 @@
+@media (min-width: 320px) and (max-width: 374px) {
+
+    .h2 {
+        font-size: 28px;
+    }
+
+    .header {
+        &__menu {
+            &__item {
+                & a {
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+
+    .questionnaire {
+        background: linear-gradient(to bottom, #ffffff00 40px, #ffffffff 140px),
+        url(../img/bg.jpg);
+        background-size: 100%;
+        padding: 92px 0 0 0;
+
+        &__title {
+
+            &__h1 {
+                font-size: 55px;
+            }
+        }
+
+        .questionnaire__private {
+            padding: 40px 0 0 0;
+
+            &__form {
+
+                #questionnaire__private__form__birth_wrapper__birth,
+                &__field {
+                    height: 50px;
+                    width: 95%;
+                }
+
+                &__field {
+                    font-size: 18px;
+                }
+
+                &__birth_wrapper {
+
+                    &::after {
+                        margin: 34px 0px 0px -32px;
+                    }
+                }
+            }
+        }
+
+        .questionnaire__experience {
+            margin: 50px 0 0 0;
+            padding: 0 15px;
+        }
+
+        .questionnaire__about {
+            #questionnaire__about__textarea_wrapper {
+                &__textarea {
+                    width: 95%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 639px) {
+    .h2 {
+        font-size: 28px;
+    }
+
+    .header {
+        &__menu {
+            &__item {
+                & a {
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+
+    .questionnaire {
+        background: linear-gradient(to bottom, #ffffff00 40px, #ffffffff 140px),
+        url(../img/bg.jpg);
+        background-size: 100%;
+        padding: 92px 0 0 0;
+
+        &__title {
+
+            &__h1 {
+                font-size: 55px;
+            }
+        }
+
+        .questionnaire__private {
+            padding: 40px 0 0 0;
+
+            &__form {
+
+                #questionnaire__private__form__birth_wrapper__birth,
+                &__field {
+                    height: 50px;
+                    width: 95%;
+                }
+
+                &__field {
+                    font-size: 18px;
+                }
+
+                &__birth_wrapper {
+
+                    &::after {
+                        margin: 34px 0px 0px -32px;
+                    }
+                }
+            }
+        }
+
+        .questionnaire__experience {
+            margin: 50px 0 0 0;
+            padding: 0 15px;
+        }
+
+        .questionnaire__about {
+            #questionnaire__about__textarea_wrapper {
+                &__textarea {
+                    width: 95%;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 640px) and (max-width: 767px) {
+    .h2 {
+        font-size: 28px;
+    }
+
+    .header {
+        &__menu {
+            &__item {
+                & a {
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+
+    .questionnaire {
+        background: linear-gradient(to bottom, #ffffff00 40px, #ffffffff 140px),
+        url(../img/bg.jpg);
+        background-size: 100%;
+        padding: 92px 0 0 0;
+
+       
+
+        .questionnaire__experience {
+            margin: 50px 0 0 0;
+            padding: 0 15px;
+
+            &__skills__skill_item {
+                margin-left: 43px;
+                margin-right: -25px;
+            }
+        }
+
+        .questionnaire__about {
+            #questionnaire__about__textarea_wrapper {
+                &__textarea {
+                    width: 95%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+    .h2 {
+        font-size: 28px;
+    }
+
+    .header {
+        &__menu {
+            &__item {
+                & a {
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+
+    .questionnaire {
+        background: linear-gradient(to bottom, #ffffff00 40px, #ffffffff 140px),
+        url(../img/bg.jpg);
+        background-size: 100%;
+        padding: 92px 0 0 0;
+
+       
+
+        .questionnaire__experience {
+            margin: 50px 0 0 0;
+            padding: 0 15px;
+
+            &__skills__skill_item {
+                margin-left: 43px;
+                margin-right: -25px;
+            }
+        }
+
+        .questionnaire__about {
+            #questionnaire__about__textarea_wrapper {
+                &__textarea {
+                    width: 95%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1023px) {
+
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+ 
+}

@@ -1,0 +1,280 @@
+@import '_libs';
+@import '_fonts';
+@import '_vars';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+.container {
+    max-width: 770px;
+    padding: 0;
+}
+
+img {
+    pointer-events: none;
+}
+
+.h2 {
+    font-family: RobotoLight;
+    font-size: 30px;
+}
+
+// .row.no-pad {
+//     margin-right: 0;
+//     margin-left: 0;
+// }
+
+// .row.no-pad > [class*='col-'] {
+//     padding-right:0;
+//     padding-left:0;
+// }
+
+.header {
+
+    padding: 29px 0 6px 0;
+    border-bottom: 1px solid $form_border;
+
+    &__menu {
+        list-style: none;
+
+        &__item {
+
+            & a {
+                text-decoration: none;
+                color: $link;
+                text-transform: uppercase;
+                font-family: RobotoLight;
+                font-size: 14px;
+                transition: all 0.2s;
+                padding: 15px 26px;
+
+                &:hover {
+                    color: $link_hover;
+                }
+            }
+        }
+    }
+}
+
+.questionnaire {
+    background: linear-gradient(to bottom, #ffffff00 87px, #ffffffff 180px),
+    url('../img/bg.jpg');
+    background-size: 100%;
+    padding: 130px 0 0 0;
+
+    &__title {
+        &__h1 {
+            font-family: RobotoThin;
+            font-size: 70px;
+            text-align: center;
+        }
+    }
+
+    .questionnaire__private {
+
+        padding: 57px 0 0 0;
+        text-align: center;
+
+        &__title {
+            padding: 26px 0 0 0;
+        }
+
+        &__form {
+
+            position: relative;
+
+            &__birth_wrapper {
+
+                &::after {
+                    content: '';
+                    width: 13px;
+                    height: 8px;
+                    margin: 40px 0px 0px -32px;
+                    position: absolute;
+                    background-image: url('../img/select_arrow.svg');
+                }
+
+                #questionnaire__private__form__birth_wrapper__birth {
+                    width: 320px;
+                    font-family: RobotoRegular;
+                    font-size: 24px;
+                    color: $form_font;
+                    text-align-last: center;
+                    -webkit-appearance: none;
+    
+                    & option {
+                        color: black;
+                    }
+                }
+            }
+
+            &__field {
+                width: 520px;
+                font-family: RobotoRegular;
+                font-size: 24px;
+                color: #000;
+                padding: 0 0 0 10px;
+
+                &::placeholder {
+                    font-family: RobotoRegular;
+                    font-size: 24px;
+                    color: $form_font;
+                    text-align: center;
+                }
+            }
+
+            #questionnaire__private__form__birth_wrapper__birth, &__field {
+                border-radius: 5px;
+                border: 1px solid $form_border;
+                height: 60px;
+                margin: 12px 0;
+            }
+        }
+    }
+
+    .questionnaire__experience {
+
+        text-align: center;
+        margin: 68px 0 0 0;
+
+        &__logo {
+
+        }
+
+        &__title {
+            padding: 26px 0 35px 0;
+        }
+
+        &__skills {
+
+            text-align: left;
+            padding: 0 0 68px 0;
+
+            &__skill_item {
+
+                position: relative;
+                text-align: left;
+                margin-left: 30px;
+                margin-right: 30px;
+                font-family: RobotoLight;
+                font-size: 16px;
+                display: block;
+                cursor: pointer;
+
+                &:hover &__checkbox-indicator {
+                    background-color: #ddd !important;
+                }
+
+                &__checkbox-indicator {
+                    position: absolute;
+                    margin: 2px 0 0 -32px;
+                    height: 20px;
+                    width: 20px;
+                    left: 0;
+                    border: 1px solid $button;
+                    border-radius: 2px;
+                    cursor: pointer;
+                    transition: all 0.2s ease;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        display: none;
+                        left: 7px;
+                        top: 4px;
+                        width: 5px;
+                        height: 10px;
+                        border: solid black;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+
+            & input {
+                cursor: pointer;
+                position: absolute;
+                left: 0;
+                opacity: 0;
+                margin: 6px 0 0 -28px;
+
+                &:checked ~ .questionnaire__experience__skills__skill_item__checkbox-indicator {
+                    background-color: #fff;
+                }
+
+                &:checked ~ .questionnaire__experience__skills__skill_item__checkbox-indicator::after {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .questionnaire__about {
+
+        text-align: center;
+
+        &__logo {
+            padding: 0 0 26px 0;
+        }
+
+        &__title {
+
+        }
+
+        &__title-desc {
+            font-family: RobotoLight;
+            font-size: 16px;
+            max-width: 505px;
+            margin: 0 auto;
+            padding: 0 0 20px 0;
+        }
+        #questionnaire__about__textarea_wrapper__textarea {
+            width: 520px;
+            height: 180px;
+            border: 1px solid $form_border;
+            border-radius: 5px;
+            color: #000;
+            font-family: RobotoLight;
+            padding: 15px 0 0 17px;
+            font-size: 20px;
+
+            &::placeholder {
+                color: $form_font;
+                font-family: RobotoRegular;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .questionnaire__button_wrapper {
+
+        text-align: center;
+        padding: 60px 0;
+
+        #questionnaire__button_wrapper__button {
+            font-family: RobotoLight;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+            background-color: $button;
+            color: #fff;
+            padding: 12px 32px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+
+            &:hover {
+                background-color: #0433b4;
+            }
+        }
+    }
+}
+
+@import '_media';
