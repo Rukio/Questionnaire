@@ -1,2 +1,2 @@
 # Questionnaire
-Simple one page project with javascript navigation, some SVGs.
+One page project with javascript navigation, some SVGs.
